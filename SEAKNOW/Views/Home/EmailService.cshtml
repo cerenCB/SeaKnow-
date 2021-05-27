@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "E-mail Service";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p></p>
+
+@using (Html.BeginForm())
+{
+
+    <h3>Email</h3>
+
+
+    @Html.TextBox("email")
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h3>Company Name</h3>
+
+    @Html.TextBox("firmname")
+    <br />
+    @ViewData["emailValidation"];
+
+
+    <br />
+    <button type="submit">Submit</button>
+
+}
